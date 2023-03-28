@@ -30,6 +30,7 @@ a {
 }
 
 #signUpField {
-    border: solid;
+    border: dotted;
+    border-color: slategray;
     padding: 25px 25px 25px 25px;
 }
