@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+input {
+    margin: 5px 5px 5px 5px;
+}
+
+a {
+    margin-right: 10px;
+}
+
+#personalInfo {
+    color: red;
+}
+
+#submit {
+    background-color: aqua;
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+}
+
+#reset {
+    background-color: orange;
+    font-size:20px;
+    width: 100px;
+    height: 40px;
+}
+
+#signUpField {
+    border: solid;
+    padding: 25px 25px 25px 25px;
+}
