@@ -1,7 +1,6 @@
 body {
     margin: 0 auto;
     max-width: 1020px;
-    background-color: aquamarine;
 }
 
 h1 {
@@ -142,10 +141,6 @@ div.description {
 
 @media screen and (max-width: 480px) {
 
-    body {
-        background-color: aqua;
-    }
-
     .title {
         text-align: center;
     }
@@ -179,9 +174,6 @@ div.description {
 
     div.product-container div {
         flex-basis: 40%;
-    }
-    body {
-        background-color:darkorange;
     }
 
     div.description {
