@@ -1,0 +1,190 @@
+body {
+    margin: 0 auto;
+    max-width: 1020px;
+    background-color: aquamarine;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+}
+
+
+input {
+    margin: 5px 5px 5px 5px;
+}
+
+a {
+    margin-right: 10px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    transition: transform 2s;
+}
+
+hr {
+    border-style: solid;
+}
+
+#header {
+    position: relative;
+    animation-name: slide;
+    animation-duration: 2s;
+}
+
+@keyframes slide {
+    from {left: 1000px;}
+    to {left:0px;}
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-product-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.product-container > div {
+    border-style: solid;
+    border-width: thin;
+    flex-basis: 20%;
+}
+
+div.description {
+    column-count: 2;
+    column-rule-style: solid;
+}
+
+
+.image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.text {
+    opacity: 0;
+    position: absolute;
+    color: white;
+    transition: transform 2s;
+}
+
+.image_container:hover .text {
+    opacity: 1;
+    transform: scale(2);
+    z-index: 2;
+}
+
+.image_container:hover img {
+    transform: scale(1.5);
+    filter: brightness(50%);
+    z-index: 1;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+#personalInfo {
+    color: red;
+}
+
+#submit {
+    background-color: aqua;
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+}
+
+#reset {
+    background-color: orange;
+    font-size:20px;
+    width: 100px;
+    height: 40px;
+}
+
+#signUpField {
+    border: dotted;
+    border-color:blue;
+    padding: 25px 25px 25px 25px;
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        background-color: aqua;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .nav-container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .product-container {
+        flex-direction: column;
+    }
+
+    div.description {
+        column-count: unset;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+
+    .nav-container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    div.product-container div {
+        flex-basis: 40%;
+    }
+    body {
+        background-color:darkorange;
+    }
+
+    div.description {
+        column-count: unset;
+    }
+}
