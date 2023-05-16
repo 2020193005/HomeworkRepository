@@ -17,16 +17,18 @@ window.onload = function () {
     const sort = document.querySelector("#price-sort");
     const filter_button = document.querySelector("#filter_button");
     const show = document.querySelector("#show");
-    let category_filtered;
-    let keyword_filtered;
-    let sort_filtered;
+    let category_filtered = null;
+    let keyword_filtered = null;
+    let sort_filtered = products;
+
+    display_products();
 
     filter_button.addEventListener("click", select_category);
 
     function select_category(event) {
       event.preventDefault();
 
-      category_filterd = null;
+      category_filtered = null;
       keyword_filtered = null;
       sort_filtered = null;
 
@@ -92,8 +94,8 @@ window.onload = function () {
       });
 
       function load() {
-        console.log(start, end);
-        //   for (const filtered_product of sort_filtered) {
+        console.log(sort_filtered);
+
         for (var i = start; i < end; i++) {
           const filtered_product = sort_filtered[i];
           const div = document.createElement("div");
