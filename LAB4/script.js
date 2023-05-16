@@ -94,8 +94,6 @@ window.onload = function () {
       });
 
       function load() {
-        console.log(sort_filtered);
-
         for (var i = start; i < end; i++) {
           const filtered_product = sort_filtered[i];
           const div = document.createElement("div");
