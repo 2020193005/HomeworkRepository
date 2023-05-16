@@ -1,0 +1,97 @@
+body {
+  margin: 0 auto;
+  max-width: 1020px;
+  background-color: antiquewhite;
+  overflow-y: scroll;
+}
+
+form {
+  width: 20%;
+  height: 100%;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  margin-right: 10px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  transition: transform 2s;
+}
+
+hr {
+  border-style: solid;
+}
+
+.products {
+  display: flex;
+  position: relative;
+  margin: 20px;
+  flex-basis: 40%;
+}
+
+.inner-div {
+  width: 300px;
+  height: 300px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+#header {
+  position: relative;
+  animation-name: slide;
+  animation-duration: 2s;
+}
+
+@keyframes slide {
+  from {
+    left: 1000px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+#personalInfo {
+  color: red;
+}
+
+#submit {
+  background-color: aqua;
+  font-size: 20px;
+  width: 100px;
+  height: 40px;
+}
+
+#reset {
+  background-color: orange;
+  font-size: 20px;
+  width: 100px;
+  height: 40px;
+}
+
+#signUpField {
+  border: dotted;
+  border-color: blue;
+  padding: 25px 25px 25px 25px;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+}
+
+#show {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+}

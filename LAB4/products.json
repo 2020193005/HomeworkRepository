@@ -1,0 +1,282 @@
+[
+  {
+    "name": "Apple",
+    "price": 0.99,
+    "origin": "USA",
+    "category": "fruit",
+    "link": "apple.jpeg"
+  },
+  {
+    "name": "Banana",
+    "price": 0.79,
+    "origin": "Ecuador",
+    "category": "fruit",
+    "link": "banana.jpeg"
+  },
+  {
+    "name": "Mango",
+    "price": 1.49,
+    "origin": "Mexico",
+    "category": "fruit",
+    "link": "mango.jpeg"
+  },
+  {
+    "name": "Orange",
+    "price": 0.79,
+    "origin": "USA",
+    "category": "fruit",
+    "link": "orange.jpeg"
+  },
+  {
+    "name": "Strawberry",
+    "price": 2.99,
+    "origin": "USA",
+    "category": "fruit",
+    "link": "strawberry.jpeg"
+  },
+  {
+    "name": "Grape",
+    "price": 3.99,
+    "origin": "USA",
+    "category": "fruit",
+    "link": "grape.jpeg"
+  },
+  {
+    "name": "Watermelon",
+    "price": 3.99,
+    "origin": "USA",
+    "category": "fruit",
+    "link": "watermelon.avif"
+  },
+  {
+    "name": "Pineapple",
+    "price": 2.99,
+    "origin": "Costa Rica",
+    "category": "fruit",
+    "link": "pineapple.jpeg"
+  },
+  {
+    "name": "Kiwi",
+    "price": 0.99,
+    "origin": "New Zealand",
+    "category": "fruit",
+    "link": "kiwi.jpeg"
+  },
+  {
+    "name": "Pomegranate",
+    "price": 2.99,
+    "origin": "USA",
+    "category": "fruit",
+    "link": "pomegranate.jpeg"
+  },
+  {
+    "name": "Carrot",
+    "price": 0.99,
+    "origin": "USA",
+    "category": "vegetable",
+    "link": "carrot.jpeg"
+  },
+  {
+    "name": "Broccoli",
+    "price": 1.49,
+    "origin": "USA",
+    "category": "vegetable",
+    "link": "broccoli.jpeg"
+  },
+  {
+    "name": "Spinach",
+    "price": 0.79,
+    "origin": "USA",
+    "category": "vegetable",
+    "link": "spinach.jpeg"
+  },
+  {
+    "name": "Tomato",
+    "price": 1.99,
+    "origin": "Italy",
+    "category": "vegetable",
+    "link": "tomato.jpeg"
+  },
+  {
+    "name": "Cucumber",
+    "price": 0.69,
+    "origin": "USA",
+    "category": "vegetable",
+    "link": "cucumber.jpeg"
+  },
+  {
+    "name": "Bell Pepper",
+    "price": 0.99,
+    "origin": "USA",
+    "category": "vegetable",
+    "link": "bellpepper.jpeg"
+  },
+  {
+    "name": "Zucchini",
+    "price": 1.29,
+    "origin": "Mexico",
+    "category": "vegetable",
+    "link": "zucchini.jpeg"
+  },
+  {
+    "name": "Cabbage",
+    "price": 0.89,
+    "origin": "USA",
+    "category": "vegetable",
+    "link": "cabbage.jpeg"
+  },
+  {
+    "name": "Eggplant",
+    "price": 1.79,
+    "origin": "USA",
+    "category": "vegetable",
+    "link": "eggplant.jpeg"
+  },
+  {
+    "name": "Potato",
+    "price": 0.49,
+    "origin": "USA",
+    "category": "vegetable",
+    "link": "potato.jpeg"
+  },
+  {
+    "name": "Beef",
+    "price": 9.99,
+    "origin": "USA",
+    "category": "meat",
+    "link": "beef.jpeg"
+  },
+  {
+    "name": "Chicken",
+    "price": 6.99,
+    "origin": "USA",
+    "category": "meat",
+    "link": "chicken.jpeg"
+  },
+  {
+    "name": "Pork",
+    "price": 7.99,
+    "origin": "USA",
+    "category": "meat",
+    "link": "pork.jpeg"
+  },
+  {
+    "name": "Lamb",
+    "price": 12.99,
+    "origin": "New Zealand",
+    "category": "meat",
+    "link": "lamb.jpeg"
+  },
+  {
+    "name": "Turkey",
+    "price": 8.99,
+    "origin": "USA",
+    "category": "meat",
+    "link": "turkey.jpeg"
+  },
+  {
+    "name": "Bacon",
+    "price": 5.99,
+    "origin": "USA",
+    "category": "meat",
+    "link": "bacon.jpeg"
+  },
+  {
+    "name": "Sausage",
+    "price": 4.99,
+    "origin": "Germany",
+    "category": "meat",
+    "link": "sausage.jpeg"
+  },
+  {
+    "name": "Veal",
+    "price": 11.99,
+    "origin": "Netherlands",
+    "category": "meat",
+    "link": "veal.webp"
+  },
+  {
+    "name": "Duck",
+    "price": 10.99,
+    "origin": "France",
+    "category": "meat",
+    "link": "duck.jpg"
+  },
+  {
+    "name": "Salmon",
+    "price": 9.99,
+    "origin": "Norway",
+    "category": "meat",
+    "link": "salmon.webp"
+  },
+  {
+    "name": "Coffee",
+    "price": 2.99,
+    "origin": "Brazil",
+    "category": "beverage",
+    "link": "coffee.jpeg"
+  },
+  {
+    "name": "Tea",
+    "price": 1.99,
+    "origin": "China",
+    "category": "beverage",
+    "link": "tea.jpeg"
+  },
+  {
+    "name": "Juice",
+    "price": 3.49,
+    "origin": "USA",
+    "category": "beverage",
+    "link": "juice.jpeg"
+  },
+  {
+    "name": "Coke",
+    "price": 1.49,
+    "origin": "USA",
+    "category": "beverage",
+    "link": "coke.jpeg"
+  },
+  {
+    "name": "Water",
+    "price": 0.99,
+    "origin": "Various",
+    "category": "beverage",
+    "link": "water.jpeg"
+  },
+  {
+    "name": "Milk",
+    "price": 2.49,
+    "origin": "USA",
+    "category": "beverage",
+    "link": "milk.jpeg"
+  },
+  {
+    "name": "Smoothie",
+    "price": 4.99,
+    "origin": "USA",
+    "category": "beverage",
+    "link": "smoothie.jpeg"
+  },
+  {
+    "name": "Lemonade",
+    "price": 3.99,
+    "origin": "USA",
+    "category": "beverage",
+    "link": "lemonade.jpeg"
+  },
+  {
+    "name": "Iced Tea",
+    "price": 2.99,
+    "origin": "USA",
+    "category": "beverage",
+    "link": "icedtea.jpeg"
+  },
+  {
+    "name": "Energy Drink",
+    "price": 2.99,
+    "origin": "USA",
+    "category": "beverage",
+    "link": "energydrink.jpeg"
+  }
+]

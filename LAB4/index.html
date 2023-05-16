@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Main Page</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1 id="header">Welcome to the Internet Programming Market</h1>
+
+    <nav class="nav-container">
+      <a href="index.html">Main Page</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Signup</a>
+    </nav>
+    <hr />
+
+    <h3>Products</h3>
+    <hr />
+
+    <div id="container">
+      <form>
+        <div>
+          <label for="food-categories">Choose a food category.</label><br />
+          <select name="food-categories" id="food-categories">
+            <option value="all">All</option>
+            <option value="fruit">Fruit</option>
+            <option value="vegetable">Vegetable</option>
+            <option value="meat">Meat</option>
+            <option value="beverage">Beverage</option>
+          </select>
+          <br />
+          <label for="search-keyword">Search for a keyword.</label><br />
+          <input
+            type="text"
+            name="search-keyword"
+            id="search-keyword"
+            placeholder="ex. fruit"
+          />
+          <br />
+          <label for="price-sort">Select to sort by price.</label><br />
+          <select name="price-sort" id="price-sort">
+            <option value="none">None</option>
+            <option value="up">Up</option>
+            <option value="down">Down</option>
+          </select>
+        </div>
+        <div>
+          <button id="filter_button">Filter Results</button>
+        </div>
+      </form>
+
+      <div id="show"></div>
+    </div>
+  </body>
+</html>
