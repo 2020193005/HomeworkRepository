@@ -48,7 +48,10 @@ window.onload = function () {
         keyword_filtered = category_filtered;
       } else {
         keyword_filtered = category_filtered.filter((product) => {
-          return product.category === keyword.value.trim().toLowerCase();
+          return (
+            product.category === keyword.value.trim().toLowerCase() ||
+            product.name.toLowerCase() === keyword.value.trim().toLowerCase()
+          );
         });
       }
 
