@@ -77,9 +77,6 @@ window.onload = function () {
     }
 
     function display_products() {
-      let start = 0;
-      let end = Math.min(start + 9, sort_filtered.length);
-
       while (show.firstChild) {
         show.removeChild(show.firstChild);
       }
@@ -89,47 +86,66 @@ window.onload = function () {
       window.addEventListener("scroll", () => {
         const end_of_page =
           window.innerHeight + window.pageYOffset >= document.body.offsetHeight;
-        if (end_of_page) {
-          start = end;
-          end = Math.min(start + 2, sort_filtered.length);
-          load();
+        if (end_of_page && show.childElementCount < sort_filtered.length) {
+          load_scroll();
         }
       });
 
       function load() {
-        for (var i = start; i < end; i++) {
-          const filtered_product = sort_filtered[i];
-          const div = document.createElement("div");
-          const img = document.createElement("img");
-          div.id = filtered_product.name;
-          if (document.querySelector(`#${filtered_product.name}`) == null) {
-            div.className = "products";
-            div.addEventListener("click", function (event) {
-              event.preventDefault();
-              display_info(filtered_product, div, img);
-            });
-            img.src = `images/${filtered_product.link}`;
-            img.alt = `${filtered_product.name}`;
-            div.appendChild(img);
-            show.appendChild(div);
-          }
+        while (
+          window.innerHeight > document.body.offsetHeight &&
+          show.childElementCount < sort_filtered.length
+        ) {
+          create_div();
         }
+      }
 
-        function display_info(filtered_product, div, img) {
-          img.style.filter = "brightness(30%)";
-          const inner_div = document.createElement("div");
-          const p_name = document.createElement("p");
-          const p_price = document.createElement("p");
-          const p_origin = document.createElement("p");
-          inner_div.className = "inner-div";
-          p_name.innerText = "Product : " + filtered_product.name;
-          p_price.innerText = "Price : $" + filtered_product.price;
-          p_origin.innerText = "Origin : " + filtered_product.origin;
-          inner_div.appendChild(p_name);
-          inner_div.appendChild(p_price);
-          inner_div.appendChild(p_origin);
-          div.appendChild(inner_div);
+      function load_scroll() {
+        for (var i = 0; i < 2; i++) {
+          if (show.childElementCount == sort_filtered.length) {
+            break;
+          }
+          create_div();
         }
+      }
+
+      function create_div() {
+        const filtered_product = sort_filtered[show.childElementCount];
+        const div = document.createElement("div");
+        const img = document.createElement("img");
+        if (document.querySelector(`#${filtered_product.name}`) == null) {
+          div.id = filtered_product.name;
+          div.className = "products";
+          div.addEventListener("click", function (event) {
+            event.preventDefault();
+            display_info(filtered_product, div, img);
+          });
+          img.src = `images/${filtered_product.link}`;
+          img.alt = `${filtered_product.name}`;
+          div.appendChild(img);
+          show.appendChild(div);
+        }
+        console.log(
+          window.innerHeight,
+          window.pageYOffset,
+          document.body.offsetHeight
+        );
+      }
+
+      function display_info(filtered_product, div, img) {
+        img.style.filter = "brightness(30%)";
+        const inner_div = document.createElement("div");
+        const p_name = document.createElement("p");
+        const p_price = document.createElement("p");
+        const p_origin = document.createElement("p");
+        inner_div.className = "inner-div";
+        p_name.innerText = "Product : " + filtered_product.name;
+        p_price.innerText = "Price : $" + filtered_product.price;
+        p_origin.innerText = "Origin : " + filtered_product.origin;
+        inner_div.appendChild(p_name);
+        inner_div.appendChild(p_price);
+        inner_div.appendChild(p_origin);
+        div.appendChild(inner_div);
       }
     }
   }
