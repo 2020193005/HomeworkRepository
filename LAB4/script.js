@@ -101,15 +101,18 @@ window.onload = function () {
           const filtered_product = sort_filtered[i];
           const div = document.createElement("div");
           const img = document.createElement("img");
-          div.className = "products";
-          div.addEventListener("click", function (event) {
-            event.preventDefault();
-            display_info(filtered_product, div, img);
-          });
-          img.src = `images/${filtered_product.link}`;
-          img.alt = `${filtered_product.name}`;
-          div.appendChild(img);
-          show.appendChild(div);
+          div.id = filtered_product.name;
+          if (document.querySelector(`#${filtered_product.name}`) == null) {
+            div.className = "products";
+            div.addEventListener("click", function (event) {
+              event.preventDefault();
+              display_info(filtered_product, div, img);
+            });
+            img.src = `images/${filtered_product.link}`;
+            img.alt = `${filtered_product.name}`;
+            div.appendChild(img);
+            show.appendChild(div);
+          }
         }
 
         function display_info(filtered_product, div, img) {
